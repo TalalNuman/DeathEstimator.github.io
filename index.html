@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<style>
+    #content{
+        display: none;
+    }
+</style>
+<body class="text-center">
+        <h2>You interested knowing your time of Death?</h2>
+        <label for="date">
+            <input type="date" name="" id="" >
+        </label>
+
+        <button class="btn btn-outline-danger" onclick="check()">Check </button>
+        <h2 id="nine"></h2>
+        <div id="content">
+            <h3>Are you curious "9" What?</h3>
+            <h4><button class="btn btn-danger" onclick="countdown()">Press Here</button> to Reveal</h4>
+        </div>
+    <h1 id="count"></h1>
+    
+
+    <script src="dist/app.js"></script>
+    <script>
+        function content(){
+            var c = document.querySelector('#content');
+            c.style.display = "block";
+            
+        }
+        function check(){
+            document.querySelector('#nine').innerHTML ="9";
+            setTimeout( content , 2000 )      
+        }
+        function countdown(){
+           count = document.querySelector('#count')
+              fun();
+        }
+
+    </script>
+</body>
+</html>
